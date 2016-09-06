@@ -1,0 +1,30 @@
+var person = {
+		firstname: "Jonas",
+		lastname: "Bunawan",
+		age: 25
+};
+
+console.log(person);
+
+function addNumbers(a,b){
+	return a + b;
+}
+
+console.log(addNumbers(8,9));
+
+var printHelloWorld = function(){
+	console.log("Hello World!");
+};
+printHelloWorld();
+
+setTimeout(printHelloWorld, 8000);
+
+function placeAnOrder(orderNumber){
+	console.log("Customer order:", orderNumber);
+	
+}
+
+//Simulate a 5 second operation
+function cookAndDeliverfood(callback){
+	setTimeout(callback, 5000);
+}

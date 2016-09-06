@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <!-- <%= %> is to call javascript variable in .ejs (embedded javascript) file to generate the expected html page -->
+    <!-- <% %> (without equal sign / =)is to call javascript syntax (if(){}, while loop, etc.) in .ejs (embedded javascript) file to generate the expected html page -->
+    <p>Jonas is in the house, yow! :)</p>
+  </body>
+</html>

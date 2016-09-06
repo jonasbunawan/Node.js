@@ -1,0 +1,13 @@
+var person = {
+		firstname: "Jonas",
+		lastname: "Bunawan",
+		age: 25
+};
+
+console.log(person);
+
+function addNumbers(a,b){
+	return a + b;
+}
+
+console.log(addNumbers(8,9));

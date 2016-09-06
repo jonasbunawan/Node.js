@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    
+    <!-- <%= %> is to call javascript variable in .ejs (embedded javascript) file to generate the expected html page -->
+    <!-- <% %> (without equal sign / =)is to call javascript syntax (if(){}, while loop, etc.) in .ejs (embedded javascript) file to generate the expected html page -->
+    
+    <p>Welcome to <%= title %></p>
+    
+    <p><%= name %> is in the house, yow! :)</p>
+    
+    <ul>
+    	<%
+    		for (var i=0; i<5; i++){
+    			document.writeln('Tuna');
+    		}
+    	%>
+    </ul>
+  </body>
+</html>

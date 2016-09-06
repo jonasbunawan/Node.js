@@ -1,0 +1,69 @@
+var person = {
+		firstname: "Jonas",
+		lastname: "Bunawan",
+		age: 25
+};
+
+console.log(person);
+
+function addNumbers(a,b){
+	return a + b;
+}
+
+console.log(addNumbers(8,9));
+
+var printHelloWorld = function(){
+	console.log("Hello World!");
+};
+printHelloWorld();
+
+setTimeout(printHelloWorld, 8000);
+
+function placeAnOrder(orderNumber){
+	console.log("Customer order:", orderNumber);
+	cookAndDeliverfood(function(){
+		console.log("Delivered food order:", orderNumber);
+	});
+}
+
+//Simulate a 5 second operation
+function cookAndDeliverfood(callback){
+	setTimeout(callback, 5000);
+}
+
+//Simulate users web request
+placeAnOrder(1);
+placeAnOrder(2);
+placeAnOrder(3);
+placeAnOrder(4);
+placeAnOrder(5);
+placeAnOrder(6);
+
+var Jonas = {
+		favFood: "Seafood",
+		favMovie: "Chappie"
+};
+
+var Person = Jonas;
+Person.favFood = "Noodles";
+console.log(Jonas.favFood);
+
+console.log(19 == '19'); //true
+console.log(19 === '19'); //false
+
+var Bunawan = {
+		printFirstName: function(){
+			console.log("My name is Jonas");
+			console.log(this === Bunawan); // true
+		}
+};
+
+Bunawan.printFirstName();
+
+//The default calling context is global
+function doSomethingWorthless(){
+	console.log("\nI am worthless");
+	console.log(this === global);
+}
+
+doSomethingWorthless();
